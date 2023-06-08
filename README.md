@@ -39,11 +39,6 @@ Models:
 
 ## Model performance
 Models were trained on a classification task of presence or absence of heart disease. The neural networks model far outperformed the other models based on its lower loss and perfect accuracy.
-*	**KNN**: loss = 0.825;
-*	**Neural Networks**: RMSE = 0.773
-*	**XGBoost**: RMSE = 0.224 (ACC = 0.986)
-*	**Decision Tree**: RMSE = 0.822
-*	**SVM**: RMSE = 0.822
 
 |       Model              |     Loss     | Accuracy |
 |-------------------------|--------------|----------|
