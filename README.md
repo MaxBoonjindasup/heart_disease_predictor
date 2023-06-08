@@ -13,11 +13,9 @@ Cardiovascular diseases (CVDs) are the #1 cause of death globally (31% worldwide
 **Dataset:** heart.csv (included in repository; from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction))
 
 ## Data Cleaning/Exploratory Data Analysis
-I made the following changes to improve the overall readability and applicability of the code:
-*	Counted the # of listings in each borough and compared the amounts in a bar plot and the percentages in a pie graph
-*	Created Revenue column and graphed the average revenue for each borough
-*	Investigated for the top 3 highest revenue neighbourhoods in Manhattan, Brooklyn, & Queens
-*	Made a graph that shows the distribution of room types in Manhattan, Brooklyn, & Queens. Then, identified the top performing room type in the top 3 neighbourhoods of Manhattan, Brooklyn, & Queens.
+I made the following changes to improve the readability and applicability of the data:
+* Reviewed for missing values (and found none!)
+* Viewed distribution and possible correlations of features via histograms and pairplots (splitted values by sex), respectively. Discovered a very strong bimodal distribution for Cholesterol and FastingBS.
 
 ![](https://github.com/Max-Boonjindasup/airbnb_analysis/blob/main/airbnb_highlights.png)
 
