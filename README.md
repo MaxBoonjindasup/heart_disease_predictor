@@ -17,7 +17,7 @@ I made the following changes to improve the readability and applicability of the
 * Reviewed for missing values (and found none!)
 * Viewed distribution and possible correlations of features via histograms and pairplots (splitted values by sex), respectively. Discovered a very strong bimodal distribution for Cholesterol and FastingBS.
 
-![](https://github.com/Max-Boonjindasup/heart_disease_predictor/heart_pairplot.png)
+![](https://github.com/Max-Boonjindasup/heart_disease_predictor/blob/main/heart_pairplot.png)
 
 ## Model Building
 
