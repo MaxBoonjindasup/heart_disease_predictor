@@ -34,24 +34,20 @@ Models:
 *	**Decision Tree** – Performed hyperparameter tuning via GridSearchCV before training model
 *	**SVM** – Manually tested for best hyperparameters and trained model on optimized hyperparameters. Then, compared model to GridSearchCV optimized hyperparameters.
 
+![](https://github.com/Max-Boonjindasup/heart_disease_predictor/blob/main/heart_knn_error_rate.png)
+![](https://github.com/Max-Boonjindasup/heart_disease_predictor/blob/main/heart_confusion_matrix_knn.png)
 
 ## Model performance
-Most models were trained to predict pricing based on a variety of attributes, but changing to predicting borough (Queens, Brooklyn, Staten Island, Manhattan, and Bronx) based off price produced excellent scores.
-The Logistic Regression model far outperformed the other approaches on the test sets.
-*	**Linear**: RMSE = 0.825
-*	**Polynomial**: RMSE = 0.773
-*	**Logistic**: RMSE = 0.224 (ACC = 0.986)
+Models were trained on a classification task of presence or absence of heart disease. The neural networks model far outperformed the other models based on its lower loss and perfect accuracy.
+*	**KNN**: loss = 0.825;
+*	**Neural Networks**: RMSE = 0.773
+*	**XGBoost**: RMSE = 0.224 (ACC = 0.986)
 *	**Decision Tree**: RMSE = 0.822
-*	**Random Forest**: RMSE = 0.822
+*	**SVM**: RMSE = 0.822
 
-![](https://github.com/Max-Boonjindasup/airbnb_analysis/blob/main/confusion_matrix_airbnb_attributes.png)
-![](https://github.com/Max-Boonjindasup/airbnb_analysis/blob/main/logistic_reg_score.png)
-
-## Bonus Section
-I performed PCA for the purpose of feature extraction by identifying the most influential features. Below are the principal components and the top 3 features (loadings) for PC1, the principal component that explains the most variance in the data. I also graphed the biplot to recast the original data onto the new PCA axes and included the top 3 PC feature vectors for reference (see notebook for 3D visualization in Plotly).
-
-* neighbourhood_group_Manhattan (Borough - Manhattan): 0.504190
-* room_type_Entire home/apt (Room Type - Entire home/apt): 0.371368
-* latitude (Latitude coordinate): 0.307925
-
-![](https://github.com/Max-Boonjindasup/airbnb_analysis/blob/main/airbnb_pca.png)
+                            Loss  Accuracy
+Neural Networks         2.42e-06     1.000
+Support Vector Machine  4.14e-05     1.000
+XGBoost                 6.00e-01     1.000
+Decision Tree                 NA     1.000
+K-Nearest Neighbors           NA     0.899
