@@ -45,9 +45,10 @@ Models were trained on a classification task of presence or absence of heart dis
 *	**Decision Tree**: RMSE = 0.822
 *	**SVM**: RMSE = 0.822
 
-                            Loss  Accuracy
-Neural Networks         2.42e-06     1.000
-Support Vector Machine  4.14e-05     1.000
-XGBoost                 6.00e-01     1.000
-Decision Tree                 NA     1.000
-K-Nearest Neighbors           NA     0.899
+|       Model              |     Loss     | Accuracy |
+|-------------------------|--------------|----------|
+| Neural Networks         | 2.42e-06     |  1.000   |
+| Support Vector Machine  | 4.14e-05     |  1.000   |
+| XGBoost                 | 6.00e-01     |  1.000   |
+| Decision Tree           |      NA      |  1.000   |
+| K-Nearest Neighbors     |      NA      |  0.899   |
