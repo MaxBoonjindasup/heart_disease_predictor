@@ -21,21 +21,19 @@ I made the following changes to improve the readability and applicability of the
 
 ## Model Building
 
-1. Removed irrelavant categorical attributes and the Revenue column as to avoid multicollinearity.
-2. Replaced 0's and NaN values with attribute means.
-3. Checked for possible correlations between variables via correlation matrix.
-4. Transformed the categorical variables into dummy variables.
-5. Standardized features
-6. Splitted data into train and tests sets (test size = 30%).   
+1. Transformed the categorical variables (Sex, ChestPainType, RestingECG, ExerciseAngina, & ST_Slope) into dummy variables.
+2. Standardized features
+3. Splitted data into train and tests sets (test size = 20%).   
 
-I trained 5 different models and evaluated them using an array of metrics: Mean Squared Error, Root Mean Squared Error, Mean Absolute Error, and R2. For logistic regression, precision, recall, F1-score, and accuracy were reported along with the accompanying confusion matrix
+I trained 5 different models for classification of heart disease and evaluated them by loss and accuracy.
 
 Models:
-*	**Linear Regression** – Baseline model; iterated on different predictor variables (ie number_of_reviews, latitude, etc.)
-*	**Polynomial Regression** – Having 6 attributes, I wanted a model to use all my attributes when predicting price
-*	**Multinomial Logistic Regression** – I flipped the question and made a classification model instead where we predict borough from price.
-*	**Decision Tree Regression** – Testing both questions (borough predicts price vs price predicts borough) with another model
-*	**Random Forest Regression** – Again, testing both questions (borough predicts price vs price predicts borough) with another model
+*	**KNN** – Solved first for best value of k (8), then fitted model, and graphed confusion matrix for accuracy, precision, recall, and F1-score.
+*	**Neural Networks** – 5 layers starting with ReLU and ending with sigmoid activation functions, having dropout regularizations in between them (total 102 nodes); compiled with SparseCategoricalCrossentropy loss function and optimized with Adam at learning rate 0.001
+*	**XGBoost** – Tested different hyperparameter combinations using GridSearchCV and used optimized hyperparameter values for model.
+*	**Decision Tree** – 
+*	**SVM** – 
+
 
 ## Model performance
 Most models were trained to predict pricing based on a variety of attributes, but changing to predicting borough (Queens, Brooklyn, Staten Island, Manhattan, and Bronx) based off price produced excellent scores.
