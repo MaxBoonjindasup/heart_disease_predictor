@@ -28,11 +28,11 @@ I made the following changes to improve the readability and applicability of the
 I trained 5 different models for classification of heart disease and evaluated them by loss and accuracy.
 
 Models:
-*	**KNN** – Solved first for best value of k (8), then fitted model, and graphed confusion matrix for accuracy, precision, recall, and F1-score.
+*	**KNN** – Solved first for best value of k (8), then fitted model, and graphed confusion matrix for accuracy, precision, recall, and F1-score. Also compared performance using cross validation.
 *	**Neural Networks** – 5 layers starting with ReLU and ending with sigmoid activation functions, having dropout regularizations in between them (total 102 nodes); compiled with SparseCategoricalCrossentropy loss function and optimized with Adam at learning rate 0.001
 *	**XGBoost** – Tested different hyperparameter combinations using GridSearchCV and used optimized hyperparameter values for model.
-*	**Decision Tree** – 
-*	**SVM** – 
+*	**Decision Tree** – Performed hyperparameter tuning via GridSearchCV before training model
+*	**SVM** – Manually tested for best hyperparameters and trained model on optimized hyperparameters. Then, compared model to GridSearchCV optimized hyperparameters.
 
 
 ## Model performance
