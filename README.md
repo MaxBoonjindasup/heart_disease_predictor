@@ -9,11 +9,11 @@ Cardiovascular diseases (CVDs) are the #1 cause of death globally (31% worldwide
 
 ## Libraries and Resources Used
 **Python Version:** Python 3.9.13  
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, plotly, and textwrap  
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, tensorflow, and keras  
 **Dataset:** heart.csv (included in repository; from [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction))
 
 ## Data Cleaning/Exploratory Data Analysis
-To enhance the code's overall readability and applicability to our models later, I performed the following:
+I made the following changes to improve the overall readability and applicability of the code:
 *	Counted the # of listings in each borough and compared the amounts in a bar plot and the percentages in a pie graph
 *	Created Revenue column and graphed the average revenue for each borough
 *	Investigated for the top 3 highest revenue neighbourhoods in Manhattan, Brooklyn, & Queens
